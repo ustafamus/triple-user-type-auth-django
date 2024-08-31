@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple User Login</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 28px;
+            color: #007bff;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="mt-5 mb-4">
+                            <h1 class="text-center">TURP</h1>
+                        </div>
+                        <div class="text-center mb-4">
+                            <label>Giriş yap!</label>
+                        </div>
+                        <div class="form-group mb-4">
+                            <a class="btn btn-primary btn-block" href="{% url 'login_view' %}">GIRIS</a>
+                        </div>
+                        <div class="text-center mb-4">
+                            <label>hesap oluştur!</label>
+                        </div>
+                        <div class="form-group mb-4">
+                            <a class="btn btn-primary btn-block" href="{% url 'register' %}">ADMIN OLARAK KAYDOL</a>
+                        </div>
+                        <div class="form-group mb-4">
+                            <a class="btn btn-primary btn-block" href="{% url 'c-register' %}">HIZMET ALAN OLARAK KAYDOL</a>
+                        </div>
+                        <div class="form-group mb-4">
+                            <a class="btn btn-primary btn-block" href="{% url 's-register' %}">HIZMET VEREN OLARAK KAYDOL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
