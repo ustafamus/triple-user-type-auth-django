@@ -1,1 +1,2 @@
-This is a triple type userbasd login system
+This is a triple user type based login system ~Django~
+
